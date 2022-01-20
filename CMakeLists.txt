@@ -21,7 +21,7 @@ add_library(fftel_pkt STATIC
   fftel_pkt.h
 )
 
-#target_include_directories(fftel_pkt PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+target_include_directories(fftel_pkt PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
 target_link_libraries(fftel_pkt hmac-sha256)
 target_compile_definitions(fftel_pkt PRIVATE FFTEL_PKT_LIBRARY)
